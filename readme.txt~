@@ -1,0 +1,6 @@
+* Python script to extract the necassary data from customerdata.txt & write in results.txt
+
+* There is no need to install any dependencies for script to run.
+
+* You can run the script by command(python3 script.py)
+

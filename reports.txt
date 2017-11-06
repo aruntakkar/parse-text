@@ -1,0 +1,16 @@
+Total Numbers of Orders 
+160 
+
+Total orders Amount 
+28050 
+
+List of customers who order only once 
+Sahan Sibal, Dhenuka Dhawan, Kavi Edwin, Markandeya Barad, Adri Dave, Anushka Mody, Salmalin Mehta, Ballari Upadhyay, Leya Sankaran, Rohan Sarma, Indra Chaudry, Latif Chia, Daeva Peri, Kali Chaudry, Daeva Tata, Niloufer Handa, Sachi Loliyekar, Amitabha Kothari, Gauri Som, Sahan Oak, Shanti Bajwa, Muni Wasgare, Kumara Nayak, Takshaka Sandal, Mitra Gounder, Tarun Mapkar, Mira Reddy, Nirav Khalsa, Hastin Mangal, Utathya Ghate, Tanika Philip, Atman Mathur, Riddhi Nair, Sulya Gupta, Mukul Krishna, Arpana Raja, Nipa Naidu, Vaibhav Mulye, Manu Oza, Shankara Narasimhan, Ranjan Khare, Brahma Swamy, Tara Menon, Sohalia Das, Pramlocha Comar, Haripriya Nayak
+
+Orders | Count of Customers 
+------|---------- 
+1|46 
+2|35 
+3|26 
+4|16 
+5+|8 
