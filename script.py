@@ -7,23 +7,24 @@ with open("customerdata.txt", 'r',
 # deleting the first entry of titles
 data_list.pop(0)
 
-def total_orders():
-    return len(data_list)          
- 
-def total_orders_amount():
-    total_amount  =  0
 
+def total_orders():
+    return len(data_list)
+
+
+def total_orders_amount():
+    total_amount = 0
     for each in data_list:
         total_amount += int(each[-4:])
     return total_amount
 
+
 def get_customers(orders):
     customers_names_list = []
-
     for each in data_list:
         customers_names_list.append(each[24:-5].replace(",", ""))
         orders_collection = collections.Counter(customers_names_list)
-    
+
     customers_list = []
 
     for user, order_status in orders_collection.items():
@@ -37,8 +38,10 @@ def get_customers(orders):
 
 
 with open('reports.txt', 'w') as output_file:
-    output_file.write("Total Numbers of Orders \n" '{} \n'.format(total_orders()))
-    output_file.write("\nTotal orders Amount \n" '{} \n'.format(total_orders_amount()))
+    output_file.write(
+        "Total Numbers of Orders \n" '{} \n'.format(total_orders()))
+    output_file.write(
+        "\nTotal orders Amount \n" '{} \n'.format(total_orders_amount()))
     output_file.write("\nList of customers who order only once \n")
     output_file.write(', '.join(get_customers(1)) + '\n')
     output_file.write("\nOrders | Count of Customers \n")
@@ -48,5 +51,3 @@ with open('reports.txt', 'w') as output_file:
     output_file.write("3|" '{} \n'.format(len(get_customers(3))))
     output_file.write("4|" '{} \n'.format(len(get_customers(4))))
     output_file.write("5+|" '{} \n'.format(len(get_customers(5))))
-    
-    
